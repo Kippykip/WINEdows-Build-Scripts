@@ -1,0 +1,11 @@
+--- gdebi.desktop	2019-03-12 10:26:46.000000000 +1000
++++ gdebi_wine.desktop	2021-11-30 03:34:09.013399001 +1000
+@@ -4,7 +4,7 @@
+ Comment=Install and view software packages
+ Exec=gdebi-gtk %f
+ Icon=gnome-mime-application-x-deb
+-Terminal=false
++Terminal=true
+ Type=Application
+ Categories=System;
+ MimeType=application/vnd.debian.binary-package;

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=My Documents
+Comment=View your documents directory
+Icon=folder_home
+Exec=thunar Documents
+Path=
+Terminal=false
+StartupNotify=true

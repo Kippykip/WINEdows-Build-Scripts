@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=FluidSynth
+Comment=Allows MIDI support
+Exec=fluidsynth --no-shell --server --audio-driver=pulseaudio --midi-driver=alsa_seq --sample-rate 44100 -o synth.cpu-cores=2 /usr/share/sounds/sf2/default-GM.sf2
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+

@@ -1,0 +1,13 @@
+--- daemon.conf	2021-01-05 13:10:50.000000000 +1000
++++ daemon_wine.conf	2021-01-05 13:10:50.000000000 +1000
+@@ -84,8 +84,8 @@
+ ; default-sample-channels = 2
+ ; default-channel-map = front-left,front-right
+ 
+-; default-fragments = 4
+-; default-fragment-size-msec = 25
++ default-fragments = 4
++ default-fragment-size-msec = 5
+ 
+ ; enable-deferred-volume = yes
+ deferred-volume-safety-margin-usec = 1

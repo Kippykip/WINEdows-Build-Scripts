@@ -1,0 +1,20 @@
+[com.canonical.indicator.sound]
+interested-media-players=[ 'parole' ]
+
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/xfce4/backdrops/Setup.png'
+
+[org.gnome.desktop.interface]
+gtk-theme='Chicago95'
+icon-theme='Chicago95'
+font-name='Microsoft Sans Serif 8'
+monospace-font-name='Monospace 10'
+
+[org.onboard]
+layout='Full Keyboard'
+theme='ModelM'
+start-minimized=true
+
+[org.onboard.window]
+docking-enabled=true
+force-to-top=true

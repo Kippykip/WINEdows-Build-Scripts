@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=WINEdows Setup Screen
+Description=Boot screen to simulate Windows 95 setup screen
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/winedows-setup
+ScriptFile=/usr/share/plymouth/themes/winedows-setup/winedows.script

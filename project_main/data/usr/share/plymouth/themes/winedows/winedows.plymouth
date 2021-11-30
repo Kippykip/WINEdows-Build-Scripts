@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=WINEdows Boot Screen
+Description=Boot screen to simulate Windows 9x boot animation
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/winedows
+ScriptFile=/usr/share/plymouth/themes/winedows/winedows.script

@@ -1,0 +1,11 @@
+--- 10_linux	2021-08-12 19:18:25.000000000 +1000
++++ 10_linux_wine	2021-11-26 02:13:06.466138992 +1000
+@@ -39,7 +39,7 @@
+ else
+   case ${GRUB_DISTRIBUTOR} in
+     Ubuntu|Kubuntu)
+-      OS="${GRUB_DISTRIBUTOR}"
++      OS="WINEdows"
+       ;;
+     *)
+       OS="${GRUB_DISTRIBUTOR} GNU/Linux"

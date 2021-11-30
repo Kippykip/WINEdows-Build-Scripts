@@ -1,0 +1,12 @@
+--- whiskermenu.css	2021-11-25 03:27:34.418061000 +1000
++++ whiskermenu_wine.css	2021-11-26 02:54:33.725815166 +1000
+@@ -105,7 +105,8 @@
+ /*    background-image: url("../assets/branding_L95.png"); */
+ /*    background-image: url("../assets/branding_L95_aliased.png"); */
+ /*    background-image: url("../assets/branding_C95.png"); */
+-    background-image: url("../assets/branding_C95_aliased.png");
++/*    background-image: url("../assets/branding_C95_aliased.png"); */
++    background-image: url("../assets/branding_wine_aliased.png");
+     background-repeat: no-repeat;
+     background-position: 0% 100%; }
+     #whiskermenu-window frame > stack,

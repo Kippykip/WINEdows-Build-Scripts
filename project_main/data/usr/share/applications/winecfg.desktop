@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=WineCFG
+Comment=Wine Compatibility Configuration
+Icon=wine
+Exec=winecfg
+Actions=
+Categories=Settings;
+StartupNotify=true

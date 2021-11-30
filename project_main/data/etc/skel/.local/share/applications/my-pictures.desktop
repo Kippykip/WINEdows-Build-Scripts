@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=My Pictures
+Comment=View your pictures directory
+Icon=folder-pictures-open
+Exec=thunar Pictures
+Path=
+Terminal=false
+StartupNotify=true

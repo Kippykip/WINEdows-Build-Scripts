@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=My Videos
+Comment=View your videos directory
+Icon=folder-videos-open
+Exec=thunar Videos
+Path=
+Terminal=false
+StartupNotify=true
