@@ -1,0 +1,1 @@
+apt -y install xfce4 xfce4-terminal

@@ -13,10 +13,6 @@ find /usr/share/sounds/Chicago95/ -type f -exec chmod 644 {} +
 #terminal
 cp ./data/usr/share/xfce4/terminal/colorschemes/Chicago95.theme /usr/share/xfce4/terminal/colorschemes/Chicago95.theme
 chmod 644 /usr/share/xfce4/terminal/colorschemes/Chicago95.theme
-#boot screen
-cp -a ./data/usr/share/plymouth/themes/. /usr/share/plymouth/themes/
-find /usr/share/plymouth/themes/ -type d -exec chmod 755 {} +
-find /usr/share/plymouth/themes/ -type f -exec chmod 644 {} +
 #Skel directory
 cp -a ./data/etc/skel/. /etc/skel/
 find /etc/skel/ -type d -exec chmod 755 {} +
@@ -33,11 +29,9 @@ chmod 644 /usr/share/icons/3dpinball.png
 #launchers
 cp ./data/usr/share/applications/clonezilla.desktop /usr/share/applications/clonezilla.desktop
 cp ./data/usr/share/applications/xcalibrate.desktop /usr/share/applications/xcalibrate.desktop
-cp ./data/usr/share/applications/winecfg.desktop /usr/share/applications/winecfg.desktop
 cp ./data/usr/share/applications/3dpinball.desktop /usr/share/applications/3dpinball.desktop
 chmod 755 /usr/share/applications/clonezilla.desktop
 chmod 755 /usr/share/applications/xcalibrate.desktop
-chmod 755 /usr/share/applications/winecfg.desktop
 chmod 755 /usr/share/applications/3dpinball.desktop
 cp ./data/usr/bin/xcalibrate /usr/bin/xcalibrate
 chmod 755 /usr/bin/xcalibrate
@@ -56,3 +50,9 @@ find /usr/share/fonts/truetype/ms_sans_serif/ -type d -exec chmod 755 {} +
 find /usr/share/fonts/truetype/ms_sans_serif/ -type f -exec chmod 644 {} +
 find /usr/share/fonts/truetype/vga_font/ -type d -exec chmod 755 {} +
 find /usr/share/fonts/truetype/vga_font/ -type f -exec chmod 644 {} +
+#wallpapers
+rm -rfv /usr/share/xfce4/backdrops/{*,.*}
+mkdir /usr/share/xfce4/backdrops/
+cp -a ./data/usr/share/xfce4/backdrops/. /usr/share/xfce4/backdrops/
+find /usr/share/xfce4/backdrops/ -type d -exec chmod 755 {} +
+find /usr/share/xfce4/backdrops/ -type f -exec chmod 644 {} +

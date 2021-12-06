@@ -15,13 +15,11 @@ apt -y install timgm6mb-soundfont
 apt -y install ghex
 apt -y install qdirstat
 apt -y install qbittorrent
-apt -y install krita
 apt -y install kolourpaint
 apt -y install chocolate-doom
-apt -y install rar unrar
 apt -y install handbrake
 apt -y install audacity
-apt -y install libdvdnav4 libdvdread7 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
+apt -y install gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 #Exfat support
 apt -y install hfsutils hfsprogs exfat-fuse exfat-utils reiser4progs f2fs-tools udftools
 apt -y install gdebi

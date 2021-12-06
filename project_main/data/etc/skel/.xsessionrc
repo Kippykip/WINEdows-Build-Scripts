@@ -1,2 +1,5 @@
 #Disable overlay scrollbars
 export GTK_OVERLAY_SCROLLING=0
+#Boot sounds
+GTK_MODULES="$GTK_MODULES:canberra-gtk-module"
+export GTK_MODULES
