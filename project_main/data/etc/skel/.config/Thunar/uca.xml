@@ -49,10 +49,21 @@
 	<name>Print file(s)</name>
 	<unique-id>1637861401357548-1</unique-id>
 	<command>thunar-print %F</command>
-	<description>Send one or multiple files to the default printer</description>
+	<description>Send one or multiple files to the default printer.</description>
 	<patterns>*.asc;*.brf;*.css;*.doc;*.docm;*.docx;*.dotm;*.dotx;*.fodg;*.fodp;*.fods;*.fodt;*.gif;*.htm;*.html;*.jpe;*.jpeg;*.jpg;*.odb;*.odf;*.odg;*.odm;*.odp;*.ods;*.odt;*.otg;*.oth;*.otp;*.ots;*.ott;*.pbm;*.pdf;*.pgm;*.png;*.pnm;*.pot;*.potm;*.potx;*.ppm;*.ppt;*.pptm;*.pptx;*.rtf;*.shtml;*.srt;*.text;*.tif;*.tiff;*.txt;*.xbm;*.xls;*.xlsb;*.xlsm;*.xlsx;*.xltm;*.xltx;*.xpm;*.xwd</patterns>
 	<startup-notify/>
 	<image-files/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>system-run</icon>
+	<name>Mark as Executable</name>
+	<unique-id>1638801629286379-1</unique-id>
+	<command>chmod +x %f</command>
+	<description>Marks a selected file as an Executable.</description>
+	<patterns>*.AppImage;*.appimage;*.sh;*.py</patterns>
+	<startup-notify/>
 	<other-files/>
 	<text-files/>
 </action>
