@@ -21,17 +21,6 @@ cp /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml /etc/xdg/xdg
 chmod 644 /etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 #Heh if the LiveCD loads these instead, how about we give it the Setup wallpaper just for this?
 patch /etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ./patches/xfsetup_wallpaper.patch
-
-#change default boot screen
-update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/winedows/winedows.plymouth 100
-#update-alternatives --install /usr/share/plymouth/themes/text.plymouth text.plymouth /usr/share/plymouth/themes/winedows-text/winedows-text.plymouth 100
-rm /usr/share/plymouth/themes/default.plymouth
-ln -s /usr/share/plymouth/themes/winedows/winedows.plymouth /usr/share/plymouth/themes/default.plymouth
-#rm /usr/share/plymouth/themes/text.plymouth
-#ln -s /usr/share/plymouth/themes/winedows-text/winedows-text.plymouth /usr/share/plymouth/themes/text.plymouth
-rm /etc/alternatives/default.plymouth
-ln -s /usr/share/plymouth/themes/winedows/winedows.plymouth /etc/alternatives/default.plymouth
-#rm /etc/alternatives/text.plymouth
-#ln -s /usr/share/plymouth/themes/winedows-text/winedows-text.plymouth /etc/alternatives/text.plymouth
+#Fix boot screen
 update-initramfs -u
 

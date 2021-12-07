@@ -13,6 +13,18 @@ chmod 644 /usr/share/icons/Chicago95/cursor.theme
 rm /etc/alternatives/x-cursor-theme
 ln -s /usr/share/icons/Chicago95/cursor.theme /etc/alternatives/x-cursor-theme
 
+#change default boot screen
+update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/winedows/winedows.plymouth 100
+#update-alternatives --install /usr/share/plymouth/themes/text.plymouth text.plymouth /usr/share/plymouth/themes/winedows-text/winedows-text.plymouth 100
+rm /usr/share/plymouth/themes/default.plymouth
+ln -s /usr/share/plymouth/themes/winedows/winedows.plymouth /usr/share/plymouth/themes/default.plymouth
+#rm /usr/share/plymouth/themes/text.plymouth
+#ln -s /usr/share/plymouth/themes/winedows-text/winedows-text.plymouth /usr/share/plymouth/themes/text.plymouth
+rm /etc/alternatives/default.plymouth
+ln -s /usr/share/plymouth/themes/winedows/winedows.plymouth /etc/alternatives/default.plymouth
+#rm /etc/alternatives/text.plymouth
+#ln -s /usr/share/plymouth/themes/winedows-text/winedows-text.plymouth /etc/alternatives/text.plymouth
+
 #Permission fix here
 chmod 755 /etc/skel/Desktop/WINEdows\ Forum.desktop
 

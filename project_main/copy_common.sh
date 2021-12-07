@@ -50,6 +50,12 @@ find /usr/share/fonts/truetype/ms_sans_serif/ -type d -exec chmod 755 {} +
 find /usr/share/fonts/truetype/ms_sans_serif/ -type f -exec chmod 644 {} +
 find /usr/share/fonts/truetype/vga_font/ -type d -exec chmod 755 {} +
 find /usr/share/fonts/truetype/vga_font/ -type f -exec chmod 644 {} +
+#xubuntu wallpapers
+apt -y remove xubuntu-artwork xubuntu-community-wallpapers xubuntu-community-wallpapers-bionic xubuntu-wallpapers
+#boot screen
+cp -a ./data/usr/share/plymouth/themes/. /usr/share/plymouth/themes/
+find /usr/share/plymouth/themes/ -type d -exec chmod 755 {} +
+find /usr/share/plymouth/themes/ -type f -exec chmod 644 {} +
 #wallpapers
 rm -rfv /usr/share/xfce4/backdrops/{*,.*}
 mkdir /usr/share/xfce4/backdrops/
