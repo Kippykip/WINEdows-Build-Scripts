@@ -32,3 +32,5 @@ apt -y install regexxer
 apt -y install k3b
 apt -y install gnome-multi-writer gnome-disk-utility
 apt -y install filezilla
+apt -y install krita
+apt -y install libdvdnav4 libdvdread7

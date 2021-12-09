@@ -54,10 +54,10 @@ history -c
 #Download ubuntu server 20.04 and setup wifi, then do this:
 sudo apt install xubuntu-desktop^
 #https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html
-sudo apt-get install libgles2-mesa libgles2-mesa-dev xorg-dev
+sudo apt-get install libgles2-mesa libgles2-mesa-dev xorg-dev pi-bluetooth
 #oh yeah dont forget the /rpi/boot directory
-sudo echo deb http://archive.raspberrypi.org/debian/ bullseye main | sudo tee /etc/apt/sources.list.d/raspberrypi.list
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7FA3303E
+#sudo echo deb http://archive.raspberrypi.org/debian/ bullseye main | sudo tee /etc/apt/sources.list.d/raspberrypi.list
+#sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7FA3303E
 sudo apt-get update
 #to activate boot screen, add this to /boot/cmdline.txt or whatever
 #quiet splash plymouth.ignore-serial-consoles vt.global_cursor_default=0
